@@ -1,0 +1,16 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python27-x64"
+    - PYTHON: "C:\\Python36-x64"
+
+install:
+  - "%PYTHON%\\python.exe -m pip install -U pip setuptools tox"
+
+build: off
+
+test_script:
+  # Prints setuptools version
+  - easy_install --version
+  # Runs the tests
+  - "%PYTHON%\\Scripts\\tox -e py"
