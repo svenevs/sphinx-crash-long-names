@@ -1,5 +1,6 @@
 # ignore the generated path in tests.py
 path/**
+docs/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
